@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        print(" in Application didFinishLaunchingWithOptions")
+        Util.copyFile((self.window?.rootViewController)!, fileName: "Student.sqlite")
         return true
     }
 

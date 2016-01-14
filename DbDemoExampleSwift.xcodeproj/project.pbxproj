@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774DF0931C46576200807081 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 774DF0921C46576200807081 /* libsqlite3.0.tbd */; };
+		774DF0A01C465C8400807081 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 774DF0961C465C8400807081 /* FMDatabase.m */; };
+		774DF0A11C465C8400807081 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 774DF0981C465C8400807081 /* FMDatabaseAdditions.m */; };
+		774DF0A21C465C8400807081 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 774DF09A1C465C8400807081 /* FMDatabasePool.m */; };
+		774DF0A31C465C8400807081 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 774DF09C1C465C8400807081 /* FMDatabaseQueue.m */; };
+		774DF0A41C465C8400807081 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 774DF09F1C465C8400807081 /* FMResultSet.m */; };
+		774DF0A61C46675C00807081 /* Student.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 774DF0A51C46675C00807081 /* Student.sqlite */; };
+		774DF0A81C4668AE00807081 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774DF0A71C4668AE00807081 /* Util.swift */; };
+		774DF0AA1C46A6F400807081 /* StudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774DF0A91C46A6F400807081 /* StudentInfo.swift */; };
+		774DF0AC1C46A9A000807081 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774DF0AB1C46A9A000807081 /* ModelManager.swift */; };
 		77CCD1051C44201B00652D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCD1041C44201B00652D91 /* AppDelegate.swift */; };
 		77CCD1071C44201B00652D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCD1061C44201B00652D91 /* ViewController.swift */; };
-		77CCD10A1C44201B00652D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CCD1081C44201B00652D91 /* Main.storyboard */; };
 		77CCD10C1C44201B00652D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CCD10B1C44201B00652D91 /* Assets.xcassets */; };
-		77CCD10F1C44201B00652D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CCD10D1C44201B00652D91 /* LaunchScreen.storyboard */; };
 		77CCD11A1C44201B00652D91 /* DbDemoExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCD1191C44201B00652D91 /* DbDemoExampleSwiftTests.swift */; };
+		77CCD1251C44242900652D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CCD1241C44242900652D91 /* Main.storyboard */; };
+		77CCD1271C442B0700652D91 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCD1261C442B0700652D91 /* StudentTableViewCell.swift */; };
+		77CCD1291C442FCE00652D91 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCD1281C442FCE00652D91 /* HomeScreenViewController.swift */; };
+		77CCD12B1C4430E200652D91 /* InsertRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCD12A1C4430E200652D91 /* InsertRecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +38,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		774DF0921C46576200807081 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		774DF0941C465C8300807081 /* DbDemoExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DbDemoExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		774DF0951C465C8400807081 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = DbDemoExampleSwift/FMDatabase.h; sourceTree = "<group>"; };
+		774DF0961C465C8400807081 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = DbDemoExampleSwift/FMDatabase.m; sourceTree = "<group>"; };
+		774DF0971C465C8400807081 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = DbDemoExampleSwift/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		774DF0981C465C8400807081 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = DbDemoExampleSwift/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		774DF0991C465C8400807081 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = DbDemoExampleSwift/FMDatabasePool.h; sourceTree = "<group>"; };
+		774DF09A1C465C8400807081 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = DbDemoExampleSwift/FMDatabasePool.m; sourceTree = "<group>"; };
+		774DF09B1C465C8400807081 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = DbDemoExampleSwift/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		774DF09C1C465C8400807081 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = DbDemoExampleSwift/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		774DF09D1C465C8400807081 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = DbDemoExampleSwift/FMDB.h; sourceTree = "<group>"; };
+		774DF09E1C465C8400807081 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = DbDemoExampleSwift/FMResultSet.h; sourceTree = "<group>"; };
+		774DF09F1C465C8400807081 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = DbDemoExampleSwift/FMResultSet.m; sourceTree = "<group>"; };
+		774DF0A51C46675C00807081 /* Student.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = Student.sqlite; path = DbDemoExampleSwift/Model/Student.sqlite; sourceTree = "<group>"; };
+		774DF0A71C4668AE00807081 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		774DF0A91C46A6F400807081 /* StudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInfo.swift; sourceTree = "<group>"; };
+		774DF0AB1C46A9A000807081 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		77CCD1011C44201B00652D91 /* DbDemoExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DbDemoExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CCD1041C44201B00652D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77CCD1061C44201B00652D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77CCD1091C44201B00652D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77CCD10B1C44201B00652D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77CCD10E1C44201B00652D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77CCD1101C44201B00652D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77CCD1151C44201B00652D91 /* DbDemoExampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DbDemoExampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CCD1191C44201B00652D91 /* DbDemoExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbDemoExampleSwiftTests.swift; sourceTree = "<group>"; };
 		77CCD11B1C44201B00652D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77CCD1241C44242900652D91 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		77CCD1261C442B0700652D91 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		77CCD1281C442FCE00652D91 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		77CCD12A1C4430E200652D91 /* InsertRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertRecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774DF0931C46576200807081 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +91,23 @@
 		77CCD0F81C44201B00652D91 = {
 			isa = PBXGroup;
 			children = (
+				774DF0951C465C8400807081 /* FMDatabase.h */,
+				774DF0A51C46675C00807081 /* Student.sqlite */,
+				774DF0961C465C8400807081 /* FMDatabase.m */,
+				774DF0971C465C8400807081 /* FMDatabaseAdditions.h */,
+				774DF0981C465C8400807081 /* FMDatabaseAdditions.m */,
+				774DF0991C465C8400807081 /* FMDatabasePool.h */,
+				774DF09A1C465C8400807081 /* FMDatabasePool.m */,
+				774DF09B1C465C8400807081 /* FMDatabaseQueue.h */,
+				774DF09C1C465C8400807081 /* FMDatabaseQueue.m */,
+				774DF09D1C465C8400807081 /* FMDB.h */,
+				774DF09E1C465C8400807081 /* FMResultSet.h */,
+				774DF09F1C465C8400807081 /* FMResultSet.m */,
+				774DF0921C46576200807081 /* libsqlite3.0.tbd */,
 				77CCD1031C44201B00652D91 /* DbDemoExampleSwift */,
 				77CCD1181C44201B00652D91 /* DbDemoExampleSwiftTests */,
 				77CCD1021C44201B00652D91 /* Products */,
+				774DF0941C465C8300807081 /* DbDemoExampleSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +124,16 @@
 			isa = PBXGroup;
 			children = (
 				77CCD1041C44201B00652D91 /* AppDelegate.swift */,
+				774DF0A91C46A6F400807081 /* StudentInfo.swift */,
+				774DF0AB1C46A9A000807081 /* ModelManager.swift */,
 				77CCD1061C44201B00652D91 /* ViewController.swift */,
-				77CCD1081C44201B00652D91 /* Main.storyboard */,
+				77CCD1241C44242900652D91 /* Main.storyboard */,
+				77CCD1281C442FCE00652D91 /* HomeScreenViewController.swift */,
+				77CCD12A1C4430E200652D91 /* InsertRecordViewController.swift */,
+				77CCD1261C442B0700652D91 /* StudentTableViewCell.swift */,
 				77CCD10B1C44201B00652D91 /* Assets.xcassets */,
-				77CCD10D1C44201B00652D91 /* LaunchScreen.storyboard */,
 				77CCD1101C44201B00652D91 /* Info.plist */,
+				774DF0A71C4668AE00807081 /* Util.swift */,
 			);
 			path = DbDemoExampleSwift;
 			sourceTree = "<group>";
@@ -179,9 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CCD10F1C44201B00652D91 /* LaunchScreen.storyboard in Resources */,
 				77CCD10C1C44201B00652D91 /* Assets.xcassets in Resources */,
-				77CCD10A1C44201B00652D91 /* Main.storyboard in Resources */,
+				77CCD1251C44242900652D91 /* Main.storyboard in Resources */,
+				774DF0A61C46675C00807081 /* Student.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +250,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774DF0A81C4668AE00807081 /* Util.swift in Sources */,
 				77CCD1071C44201B00652D91 /* ViewController.swift in Sources */,
+				77CCD12B1C4430E200652D91 /* InsertRecordViewController.swift in Sources */,
+				774DF0AA1C46A6F400807081 /* StudentInfo.swift in Sources */,
+				77CCD1291C442FCE00652D91 /* HomeScreenViewController.swift in Sources */,
+				774DF0A01C465C8400807081 /* FMDatabase.m in Sources */,
+				774DF0A41C465C8400807081 /* FMResultSet.m in Sources */,
 				77CCD1051C44201B00652D91 /* AppDelegate.swift in Sources */,
+				774DF0AC1C46A9A000807081 /* ModelManager.swift in Sources */,
+				774DF0A21C465C8400807081 /* FMDatabasePool.m in Sources */,
+				774DF0A11C465C8400807081 /* FMDatabaseAdditions.m in Sources */,
+				77CCD1271C442B0700652D91 /* StudentTableViewCell.swift in Sources */,
+				774DF0A31C465C8400807081 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,25 +283,6 @@
 			targetProxy = 77CCD1161C44201B00652D91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		77CCD1081C44201B00652D91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77CCD1091C44201B00652D91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		77CCD10D1C44201B00652D91 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77CCD10E1C44201B00652D91 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		77CCD11C1C44201B00652D91 /* Debug */ = {
@@ -329,10 +372,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DbDemoExampleSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe-petit.DbDemoExampleSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DbDemoExampleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -340,10 +387,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DbDemoExampleSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe-petit.DbDemoExampleSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DbDemoExampleSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -390,6 +441,7 @@
 				77CCD1201C44201B00652D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77CCD1211C44201B00652D91 /* Build configuration list for PBXNativeTarget "DbDemoExampleSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +450,7 @@
 				77CCD1231C44201B00652D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
